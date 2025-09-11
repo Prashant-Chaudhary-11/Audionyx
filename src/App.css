@@ -1,0 +1,205 @@
+body {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.logoDark {
+    background-color: black;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.nav-link.active-link {
+    border-bottom: 1px solid #212529;
+}
+
+.custom-btn {
+    background-color: #212529;
+    color: white;
+    border-radius: 40px;
+    padding: 8px 15px;
+    border: none;
+    text-decoration: none;
+}
+
+.custom-btn:hover {
+    background-color: #343a40;
+    color: white;
+    text-decoration: none;
+}
+
+.custom-outline-btn {
+    background-color: white;
+    color: #212529;
+    border-radius: 40px;
+    padding: 8px 15px;
+    border: 1px solid #212529;
+    text-decoration: none;
+}
+
+.custom-outline-btn:hover {
+    background-color: #212529;
+    color: white;
+    text-decoration: none;
+}
+
+.homePage, .partners-section {
+    padding: 4.5rem 2rem;
+}
+
+.homePageHeading {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.homePageTagline {
+    font-size: 20px;
+    color: #6c757d;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Animation */
+@keyframes rollInFromRight {
+    0% {
+        transform: translateX(200px) rotate(0deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+/* Apply to all circles */
+.home_circle_img,
+.home_circle_div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    margin-left: -15px;
+    transition: transform 0.3s ease;
+
+    /* animation */
+    animation: rollInFromRight 0.8s ease-out forwards;
+}
+
+/* Delay each image a little for staggered effect */
+.home_circle_img:nth-child(1) {
+    margin-left: 0;
+    animation-delay: 0.2s;
+}
+
+.home_circle_img:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.home_circle_img:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.home_circle_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    background-color: #212529;
+    animation-delay: 0.8s;
+}
+
+.home_bottom_img_group {
+    padding: 2rem;
+}
+
+/* Keyframes for fade + slide + keep rotation */
+@keyframes fadeDownRotate {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px) rotate(-15deg) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(var(--final-rotate)) scale(1);
+    }
+}
+
+/* Apply animation */
+.home_bottom_img,
+.home_bottom_img_circle {
+    opacity: 0;
+    /* start hidden */
+    animation: fadeDownRotate 1s ease-out forwards;
+    --final-rotate: 0deg;
+    /* default, will override below */
+}
+
+/* Keep your custom rotations */
+.home_bottom_img {
+    height: 14rem;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 4px solid #fff;
+    --final-rotate: 10deg;
+    /* tilted rectangle */
+}
+
+.home_bottom_img_circle {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    --final-rotate: -25deg;
+    /* tilted circle */
+}
+
+/* Staggered entrance */
+.home_bottom_img_group img:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.home_bottom_img_group img:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.home_bottom_img_group img:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.home_bottom_img_group img:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.partner-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.partner-logo {
+    height: 50px;
+    opacity: 0.85;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.partner-logo:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.partner-name {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px 10px;
+    color: #333;
+}
+.partners-section{
+    /* fade up to down when scroll */
+}
