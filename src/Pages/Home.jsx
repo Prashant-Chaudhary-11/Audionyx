@@ -1,4 +1,5 @@
 import { Home_partners } from "./Components/Home_partners"
+import { Home_song_preview } from "./Components/Home_song_preview"
 
 export const Home = () => {
     return (
@@ -28,6 +29,7 @@ export const Home = () => {
             <img src="home_7.jpg" alt="" className="home_bottom_img" />
         </div>
         <Home_partners />
+        <Home_song_preview />
         </>
     )
 }

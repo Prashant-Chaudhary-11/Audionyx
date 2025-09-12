@@ -1,7 +1,7 @@
 export const Home_partners = () => {
     return (
         <>
-            <div className="partners-section text-center my-5">
+            <div className="partners-section text-center mt-5">
                 {/* Logos Row with Names */}
                 <div className="d-flex justify-content-between align-items-center flex-wrap gap-5 mb-5">
                     
@@ -35,7 +35,7 @@ export const Home_partners = () => {
                 <h2 className="homePageHeading" data-aos="fade-down" data-aos-delay="1000">
                     Empowering Music Lovers Through Streaming Innovation
                 </h2>
-                <p className="homePageTagline" data-aos="fade-down" data-aos-delay="1200">
+                <p className="homePageTagline mb-2" data-aos="fade-down" data-aos-delay="1200">
                     Discover endless songs, connect with artists, and enjoy premium audio experiences.<br />
                     AudioNyx transforms your passion for music into reality.
                 </p>

@@ -2,6 +2,44 @@ body {
     font-family: "Red Hat Display", sans-serif;
 }
 
+.font10{
+    font-size: 10px;
+}
+
+.font12{
+    font-size: 12px;
+}
+
+.font14{
+    font-size: 14px;
+}
+
+.font16{
+    font-size: 16px;
+}
+
+.font18{
+    font-size: 18px;
+}
+
+.font20{
+    font-size: 20px;
+}
+
+.font22{
+    font-size: 22px;
+}
+
+.font24{
+    font-size: 24px;
+}
+
+.rotate90{
+    transform: rotate(90deg);
+}
+.rotate180{
+    transform: rotate(180deg);
+}
 .logoDark {
     background-color: black;
     color: white;
@@ -200,6 +238,147 @@ body {
     margin: 0px 10px;
     color: #333;
 }
-.partners-section{
-    /* fade up to down when scroll */
+
+.home-song-preview{
+    padding-bottom: 4.5rem;
 }
+
+.rightSection{
+    height: 35rem;
+    /* background-color: #f6e27f; */
+    background-image: url('song_preview_5.jpg');
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.preview-subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.preview-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #000;
+}
+.preview-heading span {
+    background: #000;
+    color: #fff;
+    padding: 0 6px;
+    border-radius: 6px;
+}
+
+.preview-episode-card {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(1px);
+}
+.episode-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.home_song_right_img{
+    height: 18rem;
+    object-fit: cover;
+}
+
+.preview-tag {
+    font-size: 0.8rem;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: #f1f1f1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.preview-tag:hover {
+    background-color: #b2b6b9;
+}
+input[type="range"] {
+    -webkit-appearance: none; /* remove default styling */
+    appearance: none;
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+    background: #ddd; /* your custom line */
+    outline: none;
+  }
+  
+  /* Progress color (for Chrome, Safari, Edge) */
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 3px;
+    border-radius: 20px;
+    background: #ddd; /* base track */
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #0085c7; /* blue dot */
+    cursor: pointer;
+    margin-top: -6px; /* center thumb */
+  }
+  
+  /* Firefox */
+  input[type="range"]::-moz-range-track {
+    height: 3px;
+    border-radius: 20px;
+    background: #ddd;
+  }
+  input[type="range"]::-moz-range-progress {
+    background: #0085c7; /* progress filled color */
+    height: 3px;
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #0085c7;
+    cursor: pointer;
+  }
+  
+  /* For IE/Edge (old) */
+  input[type="range"]::-ms-track {
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type="range"]::-ms-fill-lower {
+    background: #0085c7;
+    border-radius: 20px;
+  }
+  input[type="range"]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 20px;
+  }
+  input[type="range"]::-ms-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #0085c7;
+    cursor: pointer;
+  }
+  
+  .whiteCircle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
