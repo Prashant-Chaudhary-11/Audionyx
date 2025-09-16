@@ -1,5 +1,6 @@
 import { Home_partners } from "./Components/Home_partners"
 import { Home_song_preview } from "./Components/Home_song_preview"
+import { MusicBrowse } from "./Components/MusicBrowse"
 
 export const Home = () => {
     return (
@@ -30,6 +31,7 @@ export const Home = () => {
         </div>
         <Home_partners />
         <Home_song_preview />
+        <MusicBrowse/>
         </>
     )
 }

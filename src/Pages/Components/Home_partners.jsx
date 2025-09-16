@@ -32,10 +32,10 @@ export const Home_partners = () => {
                 </div>
 
                 {/* Heading + Subheading */}
-                <h2 className="homePageHeading" data-aos="fade-down" data-aos-delay="1000">
+                <h2 className="homePageHeading" data-aos="fade-down" data-aos-delay="800">
                     Empowering Music Lovers Through Streaming Innovation
                 </h2>
-                <p className="homePageTagline mb-2" data-aos="fade-down" data-aos-delay="1200">
+                <p className="homePageTagline mb-2" data-aos="fade-down" data-aos-delay="1000">
                     Discover endless songs, connect with artists, and enjoy premium audio experiences.<br />
                     AudioNyx transforms your passion for music into reality.
                 </p>
