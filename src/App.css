@@ -675,3 +675,26 @@ input[type="range"]::-ms-thumb {
     z-index: 1;
   }
   
+  .footerDiv {
+    position: relative;
+    padding: 4.5rem 2rem 11rem 2rem;
+  }
+  
+  .bottomFadeName {
+    font-size: 16rem;
+    font-weight: 700;
+    color: #e8e8e8;
+    line-height: 1;
+    bottom: -80px!important;
+    
+    -webkit-mask-image: linear-gradient(to bottom, black -40%, transparent 90%);
+    mask-image: linear-gradient(to bottom, black -40%, transparent 90%);
+  }
+  
+  .socialIcons i{
+    font-size: 1.5rem;
+    color: #555;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
