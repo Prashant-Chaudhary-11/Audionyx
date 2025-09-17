@@ -8,6 +8,7 @@ import { Contact } from './Pages/Contact'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Premium } from "./Pages/Premium";
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/premium" element={<Premium />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
