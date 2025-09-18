@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Premium } from "./Pages/Premium";
+import { Songs } from "./Pages/Songs";
 
 function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/premium" element={<Premium />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/songs" element={<Songs />} />
         </Routes>
       </main>
       
