@@ -74,7 +74,7 @@ export const Premium = () => {
                 </div>
                 <div className="row m-0 justify-content-center">
                     {plans.map((plan, index) => (
-                        <div className="col-md-4" key={index}>
+                        <div className="col-md-4 mb-5" key={index}>
                             <div className="flip-card mx-3">
                                 <div className="flip-card-inner">
                                     {/* Front Side */}
