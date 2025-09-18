@@ -55,8 +55,8 @@ export const Premium = () => {
     return (
         <div className="plan_page text-center py-5">
             <div className="container">
-                <h2 className="fw-bold mb-5 premium_heading">Choose Your Plan.</h2>
-                <div>
+                <h2 className="fw-bold mb-5 premium_heading">A transformative <br /> speaking subscription!</h2>
+                <div className="mb-4">
                     <div className="border border-secondary rounded-pill d-inline-flex p-2 mb-4">
                         <button 
                             className={`groupBtn ${billingCycle === "monthly" ? "active" : ""}`} 
