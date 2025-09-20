@@ -1014,3 +1014,17 @@ input[type="range"]::-ms-thumb {
     color: #040404;
   }
   
+  .about-hero {
+    background: #fff;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+  
+  .about-hero p.lead {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  

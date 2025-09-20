@@ -1,0 +1,25 @@
+/* media query for mobile */
+@media (max-width: 600px) {
+    .homePageHeading{
+        font-size: 3rem;
+    }
+    .home_bottom_img_circle{
+        display: none;
+    }
+    .home_bottom_img{
+        height: 8rem;
+    }
+    .home_bottom_img_group{
+        flex-wrap: wrap;
+    }
+    .home_bottom_img_group img{
+        margin-bottom: 2rem;
+    }
+    .partners-section {
+        margin: 0px!important;
+        padding-top: 1rem;
+    }
+    .homePage{
+        padding: 2rem 1rem!important;
+    }
+}
