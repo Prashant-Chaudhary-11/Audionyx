@@ -989,3 +989,28 @@ input[type="range"]::-ms-thumb {
     transition: transform 0.2s ease;
     color: #000;
 }
+.faq-section {
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .faq-item {
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .faq-item:hover {
+    background: #f1f1f1;
+  }
+  
+  .faq-item.active {
+    border-left: 4px solid #040404; /* Music vibe highlight */
+  }
+  
+  .faq-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #040404;
+  }
+  
