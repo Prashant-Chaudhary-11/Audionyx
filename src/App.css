@@ -1,6 +1,9 @@
 body {
     font-family: "Red Hat Display", sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .font10 {
     font-size: 10px;
@@ -164,6 +167,7 @@ body {
     font-size: 70px;
     font-weight: 700;
 }
+
 .homePageSubHeading {
     font-size: 60px;
     font-weight: 500;
@@ -826,9 +830,9 @@ input[type="range"]::-ms-thumb {
     width: 220px;
     justify-content: space-between;
     background: white;
-  }
-  
-  .toggleBtn {
+}
+
+.toggleBtn {
     flex: 1;
     border: none;
     background: transparent;
@@ -839,13 +843,13 @@ input[type="range"]::-ms-thumb {
     z-index: 2;
     color: #6c757d;
     transition: color 0.3s ease;
-  }
-  
-  .toggleBtn.active {
+}
+
+.toggleBtn.active {
     color: #fff;
-  }
-  
-  .slider {
+}
+
+.slider {
     position: absolute;
     top: 5px;
     left: 5px;
@@ -855,56 +859,58 @@ input[type="range"]::-ms-thumb {
     border-radius: 50px;
     transition: transform 0.4s ease-in-out;
     z-index: 1;
-  }
-  
-  .slider.yearly {
-    transform: translateX(100%);
-  }
-  
-  .premium_listing{
-    padding: 4.5rem 2rem
-  }
+}
 
-  .stats-item {
+.slider.yearly {
+    transform: translateX(100%);
+}
+
+.premium_listing {
+    padding: 4.5rem 2rem
+}
+
+.stats-item {
     min-width: 150px;
     text-align: center;
-  }
-  
-  .stat-number {
+}
+
+.stat-number {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #343c54; /* match your theme */
+    color: #343c54;
+    /* match your theme */
     margin-bottom: 5px;
-  }
-  
-  .stat-label {
+}
+
+.stat-label {
     font-size: 1rem;
     color: #666;
-  }
-  .cta-section {
+}
+
+.cta-section {
     background-color: #f0c8d7;
     overflow: hidden;
     margin: 0px 2rem;
-  }
-  
-  .cta-image img {
+}
+
+.cta-image img {
     max-width: 550px;
     object-fit: cover;
-  }
-  
-  .cta-title {
+}
+
+.cta-title {
     font-size: 2rem;
     font-weight: 700;
     color: #111;
-  }
-  
-  .cta-text {
+}
+
+.cta-text {
     font-size: 1rem;
     color: #444;
     margin-top: 10px;
-  }
-    
-  .premium_img {
+}
+
+.premium_img {
     position: relative;
     display: inline-block;
 }
@@ -936,6 +942,7 @@ input[type="range"]::-ms-thumb {
     /* avoid sharp edges */
     z-index: 1;
 }
+
 .concertDiv {
     position: relative;
     height: 35rem;
@@ -953,11 +960,12 @@ input[type="range"]::-ms-thumb {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 40%; /* adjust how much black you want */
-    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
+    height: 40%;
+    /* adjust how much black you want */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
 }
 
-.playBtn{
+.playBtn {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     width: 60px;
@@ -969,7 +977,8 @@ input[type="range"]::-ms-thumb {
     transition: transform 0.2s ease;
     color: #000;
 }
-.secondaryConcert{
+
+.secondaryConcert {
     bottom: -52px;
     background-color: #404040;
     border-radius: 0 0 12px 12px;
@@ -979,7 +988,8 @@ input[type="range"]::-ms-thumb {
     transition: transform 0.2s ease;
     color: #000;
 }
-.tertiaryConcert{
+
+.tertiaryConcert {
     bottom: -87px;
     background-color: #838383;
     border-radius: 0 0 12px 12px;
@@ -989,42 +999,155 @@ input[type="range"]::-ms-thumb {
     transition: transform 0.2s ease;
     color: #000;
 }
+
 .faq-section {
     max-width: 80%;
     margin: auto;
-  }
-  
-  .faq-item {
+}
+
+.faq-item {
     background: #f9f9f9;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-  
-  .faq-item:hover {
+}
+
+.faq-item:hover {
     background: #f1f1f1;
-  }
-  
-  .faq-item.active {
-    border-left: 4px solid #040404; /* Music vibe highlight */
-  }
-  
-  .faq-icon {
+}
+
+.faq-item.active {
+    border-left: 4px solid #040404;
+    /* Music vibe highlight */
+}
+
+.faq-icon {
     font-size: 1.5rem;
     font-weight: bold;
     color: #040404;
-  }
-  
-  .about-hero {
+}
+
+.about-hero {
     background: #fff;
-  }
-  
-  .about-hero h1 {
+}
+
+.about-hero h1 {
     font-size: 2.8rem;
     line-height: 1.2;
-  }
-  
-  .about-hero p.lead {
+}
+
+.about-hero p.lead {
     font-size: 1.2rem;
     color: #555;
-  }
-  
+}
+
+.orbit-container {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.phone-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 300px;
+}
+
+/* Orbit wrapper rotates */
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    /* animation: rotate 80s linear infinite; */
+}
+
+/* Badges */
+.badge-item {
+    position: absolute;
+    width: 180px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transform: rotate(-0deg);
+    /* counter rotation will be applied */
+    /* animation: counterRotate 80s linear infinite; */
+}
+
+.badge-1 {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.badge-2 {
+    top: 14.6%;
+    left: 85.4%;
+    transform: translate(-50%, -50%);
+}
+
+.badge-3 {
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.badge-4 {
+    top: 85.4%;
+    left: 85.4%;
+    transform: translate(-50%, -50%);
+}
+
+.badge-5 {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.badge-6 {
+    top: 85.4%;
+    left: 14.6%;
+    transform: translate(-50%, -50%);
+}
+
+.badge-7 {
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.badge-8 {
+    top: 14.6%;
+    left: 14.6%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Orbit animation */
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Counter-rotation so text stays upright */
+@keyframes counterRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
